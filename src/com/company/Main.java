@@ -17,19 +17,17 @@ public class Main {
         Scanner scan3 = new Scanner(System.in);
         int c = scan3.nextInt();
 
-        if (a>0 & b>0 & c>0){
-            System.out.println("Количество положительных чисел - 3");
-        } else
-        if ((a>0 & b>0 & c<0)||(a>0 & b<0 & c>0)||(a<0 & b>0 & c>0) || (a==0 & b>0 & c>0) || (a>0 & b>0 & c==0)
-                || ( a>0 & b==0 & c>0)) {
-            System.out.println("Количество положительных чисел - 2");
-        } else
-        if ((a>0 & b<0 & c<0) || (a<0 & b<0 & c>0) || (a<0 & b>0 & c<0)||(a>0 & b==0 & c==0)|| (a==0 & b==0 & c>0)
-                || ( a==0 & b>0 & c==0) ||( a>0 & b<0 & c==0) ||(a<0 & b>0 & c==0)|| (a==0 & b<0 & c>0) ||(a==0 & b>0 & c<0)
-                || (a>0 & b==0 & c<0) || (a<0 & b==0 & c>0)) {
-            System.out.println("Количество положительных чисел - 1");
-        } else {
-            System.out.println("Количество положительных чисел - 0");
-        }
+        int  d= 0;
+
+        if (a > 0)
+            d++;
+            if (b > 0)
+                d++;
+                if (c > 0)
+                    d++;
+
+
+        System.out.println("Количесво положительных цифр "+d);
+
     }
 }
